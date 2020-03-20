@@ -34,16 +34,16 @@
 ## some snapshots of output and handling issues
 
 ### snapshot of Main feature function
-![text](images/features.png "Main feature")
+![text](Sentiment_behind_reviews/images/features.png "Main feature")
 
 ### snapshot of error handling for Main feature function
-![text](images/error_1.png "Error Handling")
+![text](Sentiment_behind_reviews/images/error_1.png "Error Handling")
 
 ### snapshot of one_product_reviews function
-![text](images/reviews.png "Product reviews")
+![text](Sentiment_behind_reviews/images/reviews.png "Product reviews")
 
 ### snapshot of error handling for one_product_reviews function
-![text](images/error_2.png "Error Handling")
+![text](Sentiment_behind_reviews/images/error_2.png "Error Handling")
 
 
 ## Cleaning Data
@@ -65,9 +65,9 @@
 
 ## some snapshots of output and handling issues
 
-![text](images/last_total_products.png "last_total_products")
+![text](Sentiment_behind_reviews/images/last_total_products.png "last_total_products")
 
-![text](images/retrived_scraped_data.png "retrived_scraped_data")
+![text](Sentiment_behind_reviews/images/retrived_scraped_data.png "retrived_scraped_data")
 
 
 ## features enginnering & Modeling
@@ -165,21 +165,21 @@ For each features engineering process like tf-idf and countVectorizer, I separat
 
 ### One Hot Encoding
 
-![text](images/one_hot_table.png "one_hot_table")
+![text](Sentiment_behind_reviews/images/one_hot_table.png "one_hot_table")
 
 ### Countvectorizer
 
-![text](images/output_vectoriz.png "output_vectoriz")
+![text](Sentiment_behind_reviews/images/output_vectoriz.png "output_vectoriz")
 
 ### TF-IDF
 
-![text](images/TfidfVectorizer_df_file.png "TfidfVectorizer_df_file")
+![text](Sentiment_behind_reviews/images/TfidfVectorizer_df_file.png "TfidfVectorizer_df_file")
 
 ### Word2vec
 
-![text](images/pca_reduction_word2vec.png "pca_reduction_word2vec")
+![text](Sentiment_behind_reviews/images/pca_reduction_word2vec.png "pca_reduction_word2vec")
 
-![text](images/features_word2_vec.png "features_word2_vec")
+![text](Sentiment_behind_reviews/images/features_word2_vec.png "features_word2_vec")
 
 ## Reviews Handling
 
