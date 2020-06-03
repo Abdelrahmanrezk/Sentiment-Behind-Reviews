@@ -1,7 +1,23 @@
 
 # Arabic Sentiment Analysis
 
+## The sentiment behind reviews is Web Application that help clients get intuition about the product they need to buy
+
 ## The Senitment Behind Reviews is A complete process of Scraping, Cleaning, features enginnering, modeling and API for a web Application.
+
+
+### Quick intuition
+
+### Test Client Review
+![text](Sentiment_behind_reviews/images/positive_review1.png "positive_review1")
+
+### Retrive Product and predict Senitment of all reviews
+![text](Sentiment_behind_reviews/images/product_1.png "product_1")
+
+### The web App Result link
+
+[Graduation Project](https://drive.google.com/file/d/1IiAprp0YlMfMyLSztVpQ9J254ygj29zY/view?usp=sharing)
+
 
 ## Project Structure
 
@@ -10,7 +26,7 @@
 - features enginnering & Modeling
 - modeling
 - helpful files that Handling Reviews 
-- APIS for a web Application
+- web Application
 
 ### Scraping Data
 
@@ -199,4 +215,9 @@ So here is a function that handle these problems and return the reviews with two
 - Another Function to convert the data frame to csv file
 - handle classifed reviews
 
-# Next will be the APIs
+### Web Application
+
+After what we have discussed in all of these processes we end up with what the user can see now. The Sentiment behind reviews is designed to get products from online stores like Souq & Jumia to make analytical reviews of these products and predict  the  Sentiment  of  each  review  on  the  product  (Positive  Or  Negative), besides a pie chart that represents a quick overview of the ratio between positive and negative.
+
+
+

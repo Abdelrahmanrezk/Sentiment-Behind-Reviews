@@ -334,7 +334,6 @@ def one_string_remove_punctuation(sentence):
     strs = ''
     punctuations = string.punctuation
     for word in sentence:
-#         word = re.sub(r'(.)\1+', r'\1', word) # remove repated chars
         word = re.sub('[^\w\s+]',' ',word)
         if len(word) > 1 and not (word[0] >= 'a' and word[0] < 'z' or word[0] >= 'A' and word[0] < 'Z'):
             strs += word + ' '
@@ -376,7 +375,7 @@ def one_string_normalize_arabic(sentence):
     return sentence
 
 
-# In[26]:
+
 
 
 def all_string_normalize_arabic(text_list):
