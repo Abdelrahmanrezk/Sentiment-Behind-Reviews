@@ -1,0 +1,59 @@
+{% extends "sentiment_behind_reviews/base.html" %}
+{% load static %}
+<!-- {% block title %}About Me{% endblock %} -->
+{% block content %}
+	<div class="row signup_page">
+		<div class="col-md-6 col-sm-12">
+  <form class="signup_form" method="POST">
+  	 {% csrf_token %}
+   	 <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label>First Name:</label>
+                    <input name="first_name" type="text" class="form-control" pattern="[A-Za-z]{3,}" required />
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label>Last Name:</label>
+                    <input name="last_name" type="text" pattern="[A-Za-z]{0,}" class="form-control" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Email address:</label>
+            <input type="email" class="form-control" name="username" maxlength="150" autofocus required />
+            
+        </div>
+        <div class="form-group">
+            <label>Password:</label>
+            <input id="id_password1" name="password1" type="password" class="form-control"  required />
+        </div>
+        <div class="form-group">
+            <label>Confirm Password:</label>
+            <input id="id_password2" name="password2" type="password" class="form-control" required />
+            
+        </div>
+        <div style="color: green">
+    </div>
+    <div>
+        <!-- <div class="alert alert-danger error_signup_div"> -->
+
+        <!-- </div> -->
+      
+    </div>
+    <button class="submit_form" type="submit">SIGNUP</button>
+  </form>
+  <div class="signup_error">
+            
+    </div>
+</div>
+<div class="col-6-sm hidden-sm-up">
+	<div class="sign_content">
+		<img src=" {% static "images/sentiment_logo1.png" %}" alt="Welcome Image" draggable="false">
+	</div>
+</div>
+</div>
+{% endblock content %}  
+
+

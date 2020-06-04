@@ -1,0 +1,52 @@
+{% extends "sentiment_behind_reviews/base.html" %}
+
+{% load static %}
+{% block content %}
+	<div class="home_page row">
+		<div class="content col-md-6 col-sm-12">
+			<h1 class="heading">
+				 <span>S</span>
+				  <span>E</span>
+				  <span>N</span>
+				  <span>T</span>
+				  <span>I</span>
+				  <span>M</span>
+				  <span>E</span>
+				  <span>N</span>
+				  <span>T</span>
+				  <span>R</span>
+				  <span>E</span>
+				   <span>V</span>
+				  <span>I</span>
+				   <span>E</span>
+				  <span>W</span>
+				  <span>S</span>
+			</h1>
+			<p class="text_content">
+				
+
+			</p>
+		</div>
+
+		<div class="col-md-6 col-sm-12 user_input_form">
+			<form method='POST'>
+				{% csrf_token %}
+			   <div class="user_input">
+
+			    <textarea rows="8" cols="30" class="form-control" name="user_text" ></textarea>
+			    <!-- <p class="error_input">
+			    	
+			    </p> -->
+			  </div>
+			  <div class="submit_btns">
+			  	<button type="submit" class="btn btn-primary submit_text">Test Review</button>
+
+			  </div>
+			</form>
+			<!-- <div class="user_input_result">
+
+			</div> -->
+		</div>
+
+	</div>
+{% endblock content %}  

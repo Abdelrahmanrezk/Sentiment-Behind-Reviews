@@ -1,0 +1,735 @@
+
+
+/* 
+  The structure of the project to search for
+
+  $Start {page_name} like $Start Main
+
+  The code of each section start with all of one line code then two line code and so on
+
+  The $Start cooperative is for all of css that have a common style
+
+  $start Signup & login & Contact us 
+*/
+
+/*
+	#####################
+  ########################### $Start Main strucure style
+  #####################
+*/
+
+dl, ol, ul{ margin: 0 }
+
+li{ list-style-type: none; }
+
+.RubikMonoOne-font{ font-family: 'Rubik Mono One', sans-serif; }
+
+.Montserrat-font{ font-family: 'Montserrat', sans-serif; }
+
+li a{color: inherit;}
+
+.button_hover_style{ transition: .5s }
+
+.button_hover_style:hover{ color:#fff; }
+
+body{ background-color: #18191d; }
+
+body.scrolling_behavior{ overflow: hidden; }
+
+.profile_name{ font-family: "Cairo-Black"; }
+
+.logo a{ font-family: "Cairo-Black";}
+
+.stop-scrolling { 
+  height: 100%; 
+  overflow: hidden; 
+} 
+input, button{ outline: 0 }
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+li{ list-style-type: none; }
+@font-face {
+font-family: "Anton-Regular";
+src: url("../fonts/Anton-Regular.ttf");
+}
+@font-face {
+  font-family: "Cairo-Black";
+  src: url("../fonts/Cairo-Black.ttf");
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i,
+center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption, footer, header, hgroup, menu,nav, output,
+section, summary, time, mark, audio, video {
+  outline: none !important;
+  font-family: "Anton-Regular";
+
+}
+
+.navbar-toggler:focus, 
+.navbar-toggler:hover,
+a:hover,
+a:focus{
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/*
+  #####################
+  ########################### End Main strucure style
+  #####################
+*/
+
+/*------------------------------------------------------------------------------------*/
+
+/*
+  #####################
+  ########################### $Start cooperative classes
+  #####################
+*/
+
+.reviews_page .predict_positive,
+.reviews_page .predict_negative { text-align:left }
+
+.login_page .login_error,
+.signup_page  .signup_error{ margin: 20px; }
+
+.signup_page .sign_content img,
+.login_page .login_content img{
+  position: absolute;
+  right: 0;
+  top: 0%;
+}
+
+.signup_page .signup_form .error_signup_div{ display: none }
+.signup_page .signup_form p span, 
+.signup_page .signup_form ul,
+.contact_us_page .contact_us_form label,
+.signup_page .signup_form label,
+.login_page .login_form p label{
+  color: #fff;
+  letter-spacing: 5px;
+  font-size: 15px;
+}
+
+.signup_page .signup_form button:hover,
+.login_page .login_form  button:hover,
+.contact_us_page .contact_us_form .submit_contact:hover{
+  transform: scale(1.5,1);
+  letter-spacing: 5px;
+  background-image:  linear-gradient(to right, white , black);
+  color: #000
+
+}
+
+.reviews_page .predict_positive span,
+.reviews_page .predict_negative span{
+  background: #272f27;
+  padding: 10px;
+  margin: -10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.home_page .user_input_form .submit_textarea_error,
+.contact_us_page .contact_us_form .submit_contact_error{
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding: 10px;
+  box-shadow: 0 0 5px #771414;
+  font-size: 20px;
+}
+
+.signup_page .signup_form input,
+.login_page .login_form input,
+.contact_us_page .contact_us_form input,
+.contact_us_page .contact_us_form textarea,
+.home_page .user_input_form textarea{
+  display: block;
+  width: 100%;
+  background: #15161a;
+  border: 2px solid #fff;
+  padding: 15px;
+  box-shadow: 0px 0px 12px #17191d;
+  color: #fff;
+  border-bottom-right-radius: 20%;
+  
+}
+
+.signup_page .signup_form button,
+.login_page .login_form  button,
+.contact_us_page .contact_us_form .submit_contact{
+  width: 40%;
+  color: #fff;
+  background: #000;
+  padding: 8px 15px;
+  border: none;
+  box-sizing: 0 0 11px #fff;
+  transition: .5s;
+  font-size: 20px;
+  display: block;
+  margin:auto;
+  outline: none;
+  margin-top: 50px
+}
+
+
+/*
+  #####################
+  ########################### End cooperative classes
+  #####################
+*/
+
+/* ------------------------------------------------------------------------------- */
+
+
+/*
+  #####################
+  ########################### $Start navbar_style & footer
+  #####################
+*/
+
+.nav-bars #nav-icon span:nth-child(1) { top: 0px; }
+
+.nav-bars #nav-icon span:nth-child(2) { top: 10px; }
+
+.nav-bars #nav-icon span:nth-child(3) { top: 20px; }
+
+.nav-bars .aniated-nav { transition: 1s; }
+
+.nav-bars .aniated-nav .hidden{ display: none; }
+
+.nav-bars .my_data{ margin-top: 50px;  }
+
+.nav-bars .my_data li{ 
+  margin-bottom: 30px;
+  transition: 1s;
+  position: relative;
+  left: 20px;
+  /*width: 200px*/
+
+}
+
+
+.nav-bars .my_data li:hover{ 
+
+  left: 0;
+  color: #373c8a;
+
+}
+.logo.animate-logo:hover{color: #fff; }
+
+.nav-bars .aniated-nav.animated .hidden .ul-nav-items li a:last-child{ margin-bottom: 0 }
+
+.nav-bars #nav-icon.open span:nth-child(1) {
+  top: 10px;
+  transform: rotate(50deg);
+}
+
+.nav-bars #nav-icon.open span:nth-child(2) 
+{
+  left: -40px;
+  opacity: 0;
+}
+
+.nav-bars #nav-icon.open span:nth-child(3) {
+  transform: rotate(-50deg);
+  top: 10px;
+}
+
+.nav-bars .aniated-nav.animated .hidden  {
+  display: block;
+  padding: 0;
+}
+
+.logo a{
+  color: inherit;
+  font-size: 25px
+}
+
+.nav-bars .aniated-nav.animated .hidden .ul-nav-items li  a{
+  font-size: 20px;
+  display: block;  
+}
+
+.logo.animate-logo a{
+  color: inherit;
+  font-size: 25px
+}
+
+.nav-bars .aniated-nav.animated .hidden .ul-nav-items li:hover{
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-right: none;
+  border-left: none
+}
+
+
+.nav-bars .aniated-nav.animated .hidden .ul-nav-items .heading-name{
+  font-size: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 0px;
+  color: white
+}
+
+.nav-bars #nav-icon {
+  padding: 14px 24px;
+  position: fixed;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+  right: 50px;
+  z-index: 99999;
+  top: 30px;
+  transition: 1s
+}
+
+
+.nav-bars #nav-icon span  {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #2e54a8;
+  border-radius: 9px;
+  opacity: 1;
+  left: 5px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.nav-bars .aniated-nav.animated {
+  height: 100%;
+  width: 40%;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  background-color: #717481;
+  overflow-x: hidden;
+  padding-top: 60px;
+  animation: myMoveing 1s 1;
+}
+.nav-bars .aniated-nav:not(.animated){
+  height: 0%;
+  width: 0%;
+  position: fixed;
+  right: 0;
+  z-index: 999;
+  background-color: #717481;
+  overflow-x: hidden;
+  padding-top: 60px;
+ animation: myMoveingReverse 1s 1;
+}
+
+.nav-bars .aniated-nav.animated .hidden .ul-nav-items li  {
+  color: #333;
+  margin-bottom: 15px;
+  border: 1px solid #333;
+  width: 130px;
+  transition: .5s;
+  text-align: center;
+  padding: 3px 10px;
+}
+
+.logo{
+  position: absolute;
+  right: 0%;
+  transition: .5s;
+  top: 30px;
+  visibility: hidden;
+  color: #808391
+}
+
+.logo.animate-logo{
+  display: block;
+  right: 71%;
+  transition: .5s;
+  top: 30px;
+  visibility:visible;
+  color: #808391
+}
+
+.profile_name{
+  position: fixed;
+  top: 30px;
+  right: 71%;
+  font-size: 25px;
+  color: #808391;
+  z-index: 999
+}
+/*
+footer{
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  bottom: 0;
+  padding: 10px;
+  background-image: linear-gradient(to right, white, black);
+  letter-spacing: 2px
+}
+footer p{
+  margin-bottom: 0rem;
+  font-size: 20px;
+
+}
+
+footer a{
+  color: #14376f;
+  margin: 10px
+}
+footer p span{
+  margin-left: 20px;
+color: #0f2680c2;
+
+}
+footer a{
+  transform: .5s
+}
+footer a:hover{
+
+}
+*//*
+  #####################
+  ########################### End navbar_style
+  #####################
+*/
+
+/* ------------------------------------------------------------------------------------- */
+
+
+
+/*
+  #####################
+  ########################### $Start home_page
+  #####################
+*/
+
+/* ---------------- Home page text gernator ------------------------------*/
+
+.home_page .heading span {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  animation: bounce .3s ease infinite alternate;
+  font-family: "Cairo-Black";
+  font-size: 30px;
+  color: #FFF;
+  text-shadow: 0 1px 0 #000,
+               0 2px 0 #000,
+               0 3px 0 #000,
+               0 4px 0 #255,
+               0 5px 0 #255,
+               0 6px 0 transparent,
+               0 7px 0 transparent,
+               0 8px 0 transparent,
+               0 9px 0 transparent,
+               0 10px 10px rgba(0, 0, 0, .4);
+}
+
+.home_page .heading span:nth-child(2) { animation-delay: .1s; }
+.home_page .heading span:nth-child(3) { animation-delay: .2s; }
+.home_page .heading span:nth-child(4) { animation-delay: .3s; }
+.home_page .heading span:nth-child(5) { animation-delay: .4s; }
+.home_page .heading span:nth-child(6) { animation-delay: .5s; }
+.home_page .heading span:nth-child(7) { animation-delay: .6s; }
+.home_page .heading span:nth-child(8) { animation-delay: .7s; }
+.home_page .heading span:nth-child(9) { animation-delay: .8s; }
+.home_page .heading span:nth-child(10) { animation-delay: .9s; }
+.home_page .heading span:nth-child(11) { animation-delay: 1.0s; }
+.home_page .heading span:nth-child(12) { animation-delay: 1.1s; }
+.home_page .heading span:nth-child(13) { animation-delay: 1.2s; }
+.home_page .heading span:nth-child(14) { animation-delay: 1.3s; }
+.home_page .heading span:nth-child(15) { animation-delay: 1.4s; }
+.home_page .heading span:nth-child(16) { animation-delay: 1.5s; }
+
+@keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #000,
+                 0 2px 0 #000,
+                 0 3px 0 #000,
+                 0 4px 0 #000,
+                 0 5px 0 #255,
+                 0 6px 0 #255,
+                 0 7px 0 #255,
+                 0 8px 0 #255,
+                 0 9px 0 #255,
+                 0 50px 25px rgba(0, 0, 0, .4);
+  }
+}
+/* ---------------- Home page text gernator ------------------------------*/
+
+.home_page .user_input_form .user_input textarea{ text-align: right; }
+
+.home_page .heading{ margin-top: 40px }
+
+.home_page  .predicted_review .positive{ color: green  }
+
+.home_page  .predicted_review .negative{ color: red  }
+
+.home_page .content .text_content{ 
+  margin-top: 50px;
+  line-height: 2.5;
+  font-size:16px;
+  font-family: "Anton-Regular";
+}
+
+.home_page .user_input_form .submit_btns{
+  width: 100%;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.home_page .user_input_form .submit_btns button:hover{
+  transform: scale(1.2,1);
+  letter-spacing: 2px;
+  background-image:  linear-gradient(to right, white , black);
+  color: #000
+}
+
+.home_page  .predicted_review{
+  background: #d1ecf1;
+  color: #0c5460
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  text-align: center;
+}
+
+.home_page .user_input_form .submit_btns button{
+  width: 40%;
+  color: #fff;
+  background: #000;
+  padding: 8px 15px;
+  border: none;
+  box-sizing: 0 0 11px #fff;
+  transition: .5s;
+  font-size: 20px;
+  margin:20px;
+}
+
+/*
+  #####################
+  ########################### End home_page
+  #####################
+*/
+
+/* ------------------------------------------------------------------------------  */
+
+/*
+  #####################
+  ########################### $start Signup & login & Contact us 
+  #####################
+*/
+
+.contact_us_page .contact_us_form .submit_contact{ margin-bottom: 50px !important }
+
+
+
+/*
+  #####################
+  ########################### End Signup & login & Contact us 
+  #####################
+*/
+
+
+/*
+  #####################
+  ########################### $start product_page
+  #####################
+*/
+
+.main_product_style .product_img img{ height: 200px; }
+
+.products .card-body a{
+  position: absolute;
+  bottom: 10%;
+}
+
+.products .card-body{
+  height: 400px;
+  direction: rtl;
+  text-align: right;
+}
+
+.main_product_style{
+  direction: rtl;
+  text-align: right;
+  background: white;
+  padding: 20px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.main_product_style .product_img{
+  padding: 0;
+  display: table-cell;
+  width: 10rem;
+  position: relative;
+  right: 100%;
+}
+
+/*
+  #####################
+  ########################### End product_page
+  #####################
+*/
+
+/* ----------------------------------------------------------------------------- */
+
+
+/*
+  #####################
+  ########################### $start review_page
+  #####################
+*/
+
+.reviews_page .predict_positive { color: green; }
+.reviews_page .predict_negative{ color: red }
+
+.reviews_page{
+  direction: rtl;
+  text-align: center;
+}
+
+.reviews_page .review{
+  color: wheat;
+  font-size: 30px;
+  margin: 20px;
+  background: #1e4836;
+  padding: 10px 30px;
+}
+
+.reviews_page .reviews_pic_chart .pie_chart{
+  width: 25em;
+  position: fixed;
+  left: 5%;
+  top: 22%;
+}
+
+/*
+  #####################
+  ########################### End review_page
+  #####################
+*/
+
+
+@media(max-width: 1024px){
+  .reviews_page .reviews_pic_chart .pie_chart{
+    width: 14em
+}
+.home_page .content .text_content{
+  min-height: 120px
+}
+}
+@media(max-width: 767px){
+  .reviews_page .reviews_pic_chart .pie_chart{
+    width: 4em
+}
+
+footer{
+  padding: 5px
+}
+  footer p{
+    font-size: 12px
+  }
+  footer{
+    letter-spacing: 0
+  }
+  footer p span{
+  margin-left: 0;
+
+
+}
+.home_page .heading{
+  /*margin-top: 0px;*/
+  font-size: 1rem
+}
+.home_page .user_input_form textarea{
+  height: 150px;
+  padding: 10px
+}
+
+
+}
+
+
+
+
+@media(max-width: 1023px){
+.profile_name{
+  right: 45%;
+}
+.profile_name img{
+  width: 8em;
+}
+.main_product_style .product_img img{
+  margin-right: -40px;
+
+}
+
+}
+
+@media(max-width: 600px){
+  .main_product_style{
+  direction:ltr;
+  text-align:left;
+  }
+  .main_product_style .product_content{
+    text-align: center;
+  }
+.signup_page .sign_content img,
+.login_page .login_content img{
+  display: none;
+}
+.main_product_style .product_img img{
+  display: block;
+  margin:auto;
+}
+
+.main_product_style .product_img{
+  width: auto !important;
+  position: static !important;
+  display: block !important
+
+}
+.nav-bars .aniated-nav.animated{
+  width: 100%
+}
+.nav-bars .aniated-nav.animated .hidden{
+  margin-top: 30px
+}
+.profile_name{
+  right: 35%;
+}
+}

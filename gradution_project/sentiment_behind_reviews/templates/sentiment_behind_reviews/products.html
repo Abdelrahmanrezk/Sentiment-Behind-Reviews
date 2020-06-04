@@ -1,0 +1,54 @@
+{% extends "sentiment_behind_reviews/base.html" %}
+{% load static %}
+<!-- {% block title %}About Me{% endblock %} -->
+{% block content %}
+<div class="row products">
+  <form method="POST">
+    {% csrf_token %}
+  </form>
+
+  <div class="container">
+  {% for product in products_info %}
+    <div class="row main_product_style">
+      
+      <div class="col-md-6 col-sm-12">
+        <div class="product_content">
+          <a href="{{product.product_url}}" target="_blank">
+          <h5 class="product_title">
+            {{product.product_title}}
+          </h5>
+          </a>
+          <p class="price_table">
+            <span class="product_new_price" style="margin-left: 20px">السعر الجديد {{ product.product_new_price }}</span>
+            <p>
+            {% if  product.product_old_price > 0 %}
+            السعر القديم
+            <span style="text-decoration: line-through;" class="product_old_price"> {{ product.product_old_price }}</span>
+            {% endif %}
+          </p>
+          </p>
+          {% if  product.product_discount_percentage > 0 %}
+          <p class="product_discount_percentage">خصم  % {{product.product_discount_percentage}} </p>
+          <p class="product_discount_value">هاتوفر {{product.product_discount_value}}</p>
+          {% endif %}
+          <a product_id="{{product.product_id}}" href="/products/reviews/{{ product.product_id }}" class="product_reviews">مراجعات المنتج</a>
+
+
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <a class="product_img" href="{{product.product_url}}" target="_blank">
+        <img  draggable='false' src="{{product.image_src}}">
+
+      </a>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+
+
+</div>
+{% endblock content %}  
+
+
+

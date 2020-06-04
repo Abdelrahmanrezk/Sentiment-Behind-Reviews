@@ -1,0 +1,54 @@
+{% extends "sentiment_behind_reviews/base.html" %}
+
+{% load static %}
+{% block content %}
+<div class="container">
+	{% if products_reviews %}
+    <div class="row reviews_page">
+     
+	 <div class="col-md-8 col-sm-12">
+    	<div>
+      	 
+			 {% for review in products_reviews %}
+				<div class="review">
+				<p>{{ review.review }}
+
+				</p>
+				{% if  review.preict == "Positive" %}
+				 <p class="predict_positive">
+				 <span>
+				 {{ review.preict }}
+				</span>
+				</p>
+				{% else %}
+				<p class="predict_negative">
+				 
+				  <span>
+				 {{ review.preict }}
+				</span>
+				
+				</p>
+				{% endif %}
+				</div>
+			{% endfor %}
+		
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12">
+    	<div>
+
+			<div class="reviews_pic_chart">
+
+			<img class="pie_chart" src="{% static "images/charts/pie.png" %}" title="Pie Chart" draggable="false">
+			
+        	</div>
+      </div>
+      
+	</div>
+	{% else %}
+	<h1 style="margin-top: 30px;
+			text-align: center;" class="alert alert-info center">Sorry No reviews of this product</h1>
+	{% endif %}
+</div>
+{% endblock content %}  

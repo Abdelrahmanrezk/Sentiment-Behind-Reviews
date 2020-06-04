@@ -1,0 +1,40 @@
+{% extends "sentiment_behind_reviews/base.html" %}
+{% load static %}
+<!-- {% block title %}About Me{% endblock %} -->
+{% block content %}
+	<div class="row login_page">
+		<div class="col-md-6 col-sm-12">
+  <form class="login_form"  method="POST">
+        {% csrf_token %}
+<!--         {% if next %}
+            <input type="hidden" name="next" value="{{ next }}" />
+        {% endif %} -->
+        <p>
+            <label  for="username">E-mail</label>
+            <input type="text" id="username" name="username">
+        </p>
+        <p>
+            <label  for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </p>
+     
+        <!-- {% if form.error %} -->
+        
+        <!-- {% endif %} -->
+        <button class="submit_login" type="submit">LOGIN</button>
+
+        </form>
+        <div class="login_error">
+            
+        </div>
+</div>
+<div class="col-6-sm hidden-sm-up">
+	<div class="login_content">
+		<img src=" {% static "images/sentiment_logo1.png" %}" alt="Welcome Image" draggable="false">
+	</div>
+</div>
+</div>
+{% endblock content %}  
+
+
+

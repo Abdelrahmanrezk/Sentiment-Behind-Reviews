@@ -1,0 +1,79 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="{% static "images/sentiment_logo2.png"%}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Sentiment Behind Reviews</title>
+     <link rel="stylesheet"   href=" {% static "css/owl.carousel.min.css" %}">
+     <link rel="stylesheet" href=" {% static "css/owl.theme.default.min.css" %}">
+      <link rel="stylesheet" href=" {% static "css/all.css" %}">
+    <link rel="stylesheet" href=" {% static "css/style.css" %}">
+
+  </head>
+  <body>
+      <!-- start Our NavBar  Style -->
+
+      <header class="nav-bars">
+        <div id="nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="aniated-nav">
+          <div class="hidden">
+            <ul class="ul-nav-items">
+              <a class="heading-name button_hover_style RubikMonoOne-font" href="{% url 'home_page' %}">
+              <h2  > {{user.first_name| title}}</h2> 
+            </a>
+              <li class="active_button"><a class="button_hover_style" href="{% url 'home_page' %}">HOME</a></li>
+              {%if not user.is_authenticated%}
+              <li><a class="button_hover_style" href="{% url 'signup_form' %}">SIGN UP</a></li>
+              <li><a class="button_hover_style" href="{% url 'login_form' %}">LOGIN</a></li>
+              {%else%}
+              <li><a class="button_hover_style" href="{% url 'logout_form' %}">LOGOUT</a></li>
+              {%endif%}
+              <li><a class="button_hover_style" href="{% url 'products' %}">PROJECTS</a></li>
+              <li><a class="button_hover_style" href="{% url 'contact_form' %}">CONTACT</a></li>
+            </ul>
+            <ul class="my_data">
+              <li> <a target="_blank" href="https://www.linkedin.com/in/abdelrahman-rezk/"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+               <li><a  target="_blank" href="https://github.com/Abdelrahmanrezk"><i class="fab fa-github fa-2x"></i></a> </li>
+               <li> Phone: <a target="_blank" href="https://api.whatsapp.com/send?phone=01116259370">+201116259370</a></li>
+            </ul>
+          </div>
+        </div>
+        <a class="profile_name" href="{% url 'home_page' %}">
+          <img src="{% static "images/sentiment_logo2.png" %}" title="logo" draggable="false">
+      </a>
+
+      </header>
+  
+   
+
+  <div class="container" style="position: relative; top: 130px">
+    {% block content %}
+      load pages here
+    {% endblock content %}
+</div>
+
+<!-- <footer>
+  <p> All Rights Reserved &copy; 2020 <a target="_blank" href="https://sentiment-behind-reviews.herokuapp.com/"> SBR </a>  & Supervised By <span>DR.Hala Abbas & DR.Eid Emary</span> <p>
+   
+</footer> -->
+
+</body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+    <script src=" {% static "js/owl.carousel.min.js" %} "></script>
+    <script src=" {% static "js/all.js" %}"></script>
+    <script src=" {% static "js/script.js" %}"></script>
+
+
+  </body>
+</html>
