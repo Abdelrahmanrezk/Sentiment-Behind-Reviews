@@ -220,4 +220,6 @@ So here is a function that handle these problems and return the reviews with two
 After what we have discussed in all of these processes we end up with what the user can see now. The Sentiment behind reviews is designed to get products from online stores like Souq & Jumia to make analytical reviews of these products and predict  the  Sentiment  of  each  review  on  the  product  (Positive  Or  Negative), besides a pie chart that represents a quick overview of the ratio between positive and negative.
 
 
+## install requirements
 
+pip install -r requirements.txt
