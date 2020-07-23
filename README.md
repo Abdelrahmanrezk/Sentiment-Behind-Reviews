@@ -17,7 +17,7 @@ The sentiment behind reviews is a Web application that help users get intuition 
 
 ## install requirements
 
-Go to "Graduation Report" folder then write interminal:
+Go to "Graduation App" folder then write interminal:
 
 - pip install -r requirements.txt
 
