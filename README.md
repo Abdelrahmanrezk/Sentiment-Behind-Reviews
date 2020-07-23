@@ -109,9 +109,9 @@ For each features engineering process like tf-idf and countVectorizer, I separat
 
 - f1_score: 0.84 Train & 0.83 Testing
 
-|Model | CountVectorizer | TF-IDF | Word2Vec |
-| :---: | :---: | :---: | :---: | :---: |
-| LogisticRegression | 89 | 90 | 83 |
+|Model | #CountVectorizer | #TF-IDF | #Word2Vec |
+| :---: | :---: | :---: | :---: |
+| Logistic Regression | 89 | 90 | 83 |
 | SVC Linear | 88 | 90 | 83 |
 | MultinomialNB | 86 | 84.1 |  |
 
