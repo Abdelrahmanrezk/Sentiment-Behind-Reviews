@@ -12,17 +12,19 @@ The sentiment behind reviews is a Web application that help users get intuition 
 - Project Report [Scraping Notebook](https://github.com/Abdelrahmanrezk/Sentiment-Behind-Reviews/blob/master/Graduation%20Report/Abdelrahman_rezk_1551310668__TM471_Project_Final_Report.pdf)
 - Project Video[Scraping Notebook](https://drive.google.com/file/d/1IiAprp0YlMfMyLSztVpQ9J254ygj29zY/view)
 
-### Quick intuition
-
-### Test Client Review
-![text](Sentiment_behind_reviews/images/positive_review1.png "positive_review1")
-
-### Retrive Product and predict Senitment of all reviews
-![text](Sentiment_behind_reviews/images/product_1.png "product_1")
 
 ## install requirements
 
-pip install -r requirements.txt
+Go to "Graduation Report" folder then write interminal:
+
+- pip install -r requirements.txt
+
+
+### Quick intuition 
+
+### Test Client Review & Retrive Product and predict Senitment of all reviews
+![text](Sentiment_behind_reviews/images/positive_review1.png "positive_review1") ![text](Sentiment_behind_reviews/images/product_1.png "product_1")
+
 
 ### Scraping Data
 
