@@ -8,6 +8,7 @@ import pymongo
 
 user_agent = 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'
 # apply your data
-mongo_url = "cluster0-uedg8.mongodb.net/test?retryWrites=true&w=majority"
+mongo_url = "cluster0-uedg8.mongodb.net/<dbname>?retryWrites=true&w=majority"
+
 mongo_user = "Abdelrahman_Rezk"
 mongo_pass = "Abdelrahman_12011"

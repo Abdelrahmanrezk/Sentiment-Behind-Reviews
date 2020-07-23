@@ -1,10 +1,16 @@
 
 # Arabic Sentiment Analysis
 
-## The sentiment behind reviews is Web Application that help clients get intuition about the product they need to buy
+The sentiment behind reviews is a Web application that help users get intuition about the product they intend to buy from online stores.
 
-## The Senitment Behind Reviews is A complete process of Scraping, Cleaning, features enginnering, modeling and API for a web Application.
+## Project Structure
 
+- Scraping Data [Scraping Notebook](https://github.com/Abdelrahmanrezk/Sentiment-Behind-Reviews/blob/master/Sentiment_behind_reviews/scraping_cleaning/Souq_scrapping_multithreading.ipynb)
+- Cleaning Data [Scraping Notebook](https://github.com/Abdelrahmanrezk/Sentiment-Behind-Reviews/blob/master/Sentiment_behind_reviews/scraping_cleaning/cleaning_data.ipynb)
+- Different features enginnering & Modeling [Scraping Notebook](https://github.com/Abdelrahmanrezk/Sentiment-Behind-Reviews/tree/master/Sentiment_behind_reviews/features_extractions)
+- web Application [Scraping Notebook](https://github.com/Abdelrahmanrezk/Sentiment-Behind-Reviews/tree/master/gradution_project)
+- Project Report [Scraping Notebook](https://github.com/Abdelrahmanrezk/Sentiment-Behind-Reviews/blob/master/Graduation%20Report/Abdelrahman_rezk_1551310668__TM471_Project_Final_Report.pdf)
+- Project Video[Scraping Notebook](https://drive.google.com/file/d/1IiAprp0YlMfMyLSztVpQ9J254ygj29zY/view)
 
 ### Quick intuition
 
@@ -14,27 +20,11 @@
 ### Retrive Product and predict Senitment of all reviews
 ![text](Sentiment_behind_reviews/images/product_1.png "product_1")
 
-### The web App Result link
+## install requirements
 
-[Graduation Project](https://drive.google.com/file/d/1IiAprp0YlMfMyLSztVpQ9J254ygj29zY/view?usp=sharing)
-
-
-## Project Structure
-
-- Scraping Data
-- Cleaning Data
-- features enginnering & Modeling
-- modeling
-- helpful files that Handling Reviews 
-- web Application
+pip install -r requirements.txt
 
 ### Scraping Data
-
-**what in Scraping notebook:**
-
-- Implement helpful function that help you scrapp souq products over  thousands of products, along with main features and all reviews of each product.
-- Config file for some intilzation called souq_configs.py.
-- Using firfox geckodriver.
 
 **Structure of the Scrapping I used:**
 - loading packages we need.
@@ -45,22 +35,11 @@
 - others files like cleaning and features engineering work on these scraped data, actually on  reviews of products
 - testing some of functions
 
-## Each function is described beside of clean code
-
-## some snapshots of output and handling issues
-
 ### snapshot of Main feature function
 ![text](Sentiment_behind_reviews/images/features.png "Main feature")
 
-### snapshot of error handling for Main feature function
-![text](Sentiment_behind_reviews/images/error_1.png "Error Handling")
-
 ### snapshot of one_product_reviews function
 ![text](Sentiment_behind_reviews/images/reviews.png "Product reviews")
-
-### snapshot of error handling for one_product_reviews function
-![text](Sentiment_behind_reviews/images/error_2.png "Error Handling")
-
 
 ## Cleaning Data
 
@@ -220,6 +199,4 @@ So here is a function that handle these problems and return the reviews with two
 After what we have discussed in all of these processes we end up with what the user can see now. The Sentiment behind reviews is designed to get products from online stores like Souq & Jumia to make analytical reviews of these products and predict  the  Sentiment  of  each  review  on  the  product  (Positive  Or  Negative), besides a pie chart that represents a quick overview of the ratio between positive and negative.
 
 
-## install requirements
 
-pip install -r requirements.txt
