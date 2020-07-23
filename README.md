@@ -3,6 +3,8 @@
 
 The sentiment behind reviews is a Web application that help users get intuition about the product they intend to buy from online stores.
 
+**Each Notebook has its own explanation of functions in more details.**
+
 ## Project Structure
 
 - [Scraping Notebook ](https://github.com/Abdelrahmanrezk/Sentiment-Behind-Reviews/blob/master/Sentiment_behind_reviews/scraping_cleaning/Souq_scrapping_multithreading.ipynb)
@@ -112,41 +114,12 @@ For each features engineering process like tf-idf and countVectorizer, I separat
 ## snapshots Outputs
 
 <p float="left">
-  <img src="Sentiment_behind_reviews/images/one_hot_table.png" width="500" />
-  <img src="Sentiment_behind_reviews/images/output_vectoriz.png" width="500" />
+  <img src="Sentiment_behind_reviews/images/one_hot_table.png" width="300" />
+  <img src="Sentiment_behind_reviews/images/output_vectoriz.png" width="300" />
+	<img src="Sentiment_behind_reviews/images/TfidfVectorizer_df_file.png" width="300" />
+  <img src="Sentiment_behind_reviews/images/pca_reduction_word2vec.png" width="300" />
 </p>
-<p float="left">
-  <img src="Sentiment_behind_reviews/images/TfidfVectorizer_df_file.png" width="500" />
-  <img src="Sentiment_behind_reviews/images/features_word2_vec.png" width="500" />
-</p>
-### One Hot Encoding
 
-![text](Sentiment_behind_reviews/images/one_hot_table.png "one_hot_table")
-
-### Countvectorizer
-
-![text](Sentiment_behind_reviews/images/output_vectoriz.png "output_vectoriz")
-
-### TF-IDF
-
-![text](Sentiment_behind_reviews/images/TfidfVectorizer_df_file.png "TfidfVectorizer_df_file")
-
-### Word2vec
-
-![text](Sentiment_behind_reviews/images/pca_reduction_word2vec.png "pca_reduction_word2vec")
-
-![text](Sentiment_behind_reviews/images/features_word2_vec.png "features_word2_vec")
-
-## Reviews Handling
-
-**based on the problems of Sentimen Classifcation some of reviews file have muliple columns like:**
-- 'reviews.dateAdded' 
-- 'reviews.dateSeen'
-- others columns
-
-but we just interset in two columns the text review and the rate of each review.
-
-So here is a function that handle these problems and return the reviews with two columns.
 
 ### Pipline Reviews Handling Structure
 
