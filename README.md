@@ -109,10 +109,12 @@ For each features engineering process like tf-idf and countVectorizer, I separat
 
 - f1_score: 0.84 Train & 0.83 Testing
 
-| Attempt | #1 | #2 |
-| :---: | :---: | :---: |
-| Seconds | 301 | 283 |
-
+|Model | #Accuracy |
+| :---: | :---: |
+| MultinomialNB | 84.1 |
+| LogisticRegression | 90 |
+| SVC Linear | 90 |
+| SVC poly 2 | 82 |
 
 ## snapshots Outputs
 
