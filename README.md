@@ -22,53 +22,32 @@ Go to "Graduation Report" folder then write interminal:
 
 ### Quick intuition 
 
-### Test Client Review, Retrive Product and predict Senitment of all reviews
+**Test Client Review, Retrive Product and predict Senitment of all reviews**
 
 <p float="left">
   <img src="Sentiment_behind_reviews/images/positive_review1.png" width="400" />
   <img src="Sentiment_behind_reviews/images/product_1.png" width="400" /> 
 </p>
 
-### Scraping Data
 
-**Structure of the Scrapping I used:**
-- loading packages we need.
-- path the work dir.
+**Structure of the Scrapping & cleaning:**
 - connect to cloud mongodb database: some variables defined in souq_configs file.
 - handle some firefox preference and options that help us during process of scrapping
-- at and scraping the products
 - others files like cleaning and features engineering work on these scraped data, actually on  reviews of products
 - testing some of functions
-
-### snapshot of Main feature function
-![text](Sentiment_behind_reviews/images/features.png "Main feature")
-
-### snapshot of one_product_reviews function
-![text](Sentiment_behind_reviews/images/reviews.png "Product reviews")
-
-## Cleaning Data
-
-### more that 5000 scraped products and 100000 Arabic & English reviews
-
-**Welcome to second stage of cleaning scraped reviews, what in this notebook:**
-
-    
-### Pipline Cleaning process Structure**
-
-- Convert all reviews to lower case # for English Reviews
 - remove punctuations of all reviews
 - remove stop words # I found its so bad to remove stop words because its convert the meaning of the sentense at all but I have Designed my own stopwords for this project because of sentment analysis issues
 - spell correction
 - Tokenization
-- Steaming
 - Lemmatization
 
-## some snapshots of output and handling issues
-
-![text](Sentiment_behind_reviews/images/last_total_products.png "last_total_products")
-
-![text](Sentiment_behind_reviews/images/retrived_scraped_data.png "retrived_scraped_data")
-
+### snapshots Output
+<p float="left">
+  <img src="Sentiment_behind_reviews/images/features.png" width="300" />
+  <img src="Sentiment_behind_reviews/images/reviews.png" width="300" /> 
+  <img src="Sentiment_behind_reviews/images/last_total_products.png" width="300" />
+  <img src="Sentiment_behind_reviews/images/retrived_scraped_data.png" width="300" />
+</p>
 
 ## features enginnering & Modeling
 
