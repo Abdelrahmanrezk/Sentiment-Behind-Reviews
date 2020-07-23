@@ -43,32 +43,21 @@ Go to "Graduation Report" folder then write interminal:
 
 ### snapshots Output
 <p float="left">
-  <img src="Sentiment_behind_reviews/images/features.png" width="300" />
-  <img src="Sentiment_behind_reviews/images/reviews.png" width="300" /> 
-  <img src="Sentiment_behind_reviews/images/last_total_products.png" width="300" />
-  <img src="Sentiment_behind_reviews/images/retrived_scraped_data.png" width="300" />
+  <img src="Sentiment_behind_reviews/images/features.png" width="500" />
+  <img src="Sentiment_behind_reviews/images/retrived_scraped_data.png" width="500" />
 </p>
 
-## features enginnering & Modeling
+## Differet features enginnering & Modeling
+- Binary BOW
+- CountVectorizer BOW
+- TF-IDF BOW 
+- Word2Vec
+- LogisticRegression
+- SVC Linear
+- MultinomialNB naive_bayes
 
 For each features engineering process like tf-idf and countVectorizer, I separate each of them to its own file with models based on the feature I used.
 
-### One Hot Encoding
-**Encoding categorical data:**
-
-- convert_string_to_one_hot_manual
-- convert_string_to_one_hot_using_pannds
-- convert_string_to_labelencoder_using_sklearn
-
-### CountVectorizer
-**Text data requires special preparation before you can start using it for predictive modeling**
-
-### Pipline of CountVectorizer
-- Read our classified file
-- Shuffle the data
-- split the data to train and testing
-- count_vectorize
-- model training and testing
 
 ### Modeling
 
@@ -84,15 +73,7 @@ For each features engineering process like tf-idf and countVectorizer, I separat
 
 - f1_score: 0.96Train & 0.88 Testing
 
-### TfidfVectorizer
-**Text data requires special preparation before you can start using it for predictive modeling**
 
-### Pipline of CountVectorizer
-- Read our classified file
-- Shuffle the data
-- split the data to train and testing
-- count_vectorize
-- model training and testing
 ### Modeling
 
 **MultinomialNB naive_bayes**
@@ -115,18 +96,6 @@ For each features engineering process like tf-idf and countVectorizer, I separat
 
 - f1_score: 0.80 Train & 0.82 Testing Also !!
 
-### word2vec
-**Word embeddings are a type of word representation that allows words with similar meaning to have a similar representation.**
-
-### Pipline of CountVectorizer
-- Read our classified file
-- Shuffle the data
-- get greatest length from our data for padding
-- split each review to list of words
-- word2vec features extraction
-- display the data after Dimension reduction
-- build word_2_vec_matrix for training and testing
-- model training and testing
 
 ### Modeling
 
@@ -140,8 +109,16 @@ For each features engineering process like tf-idf and countVectorizer, I separat
 
 
 
-## some snapshots of output for features enginnering
+## snapshots Outputs
 
+<p float="left">
+  <img src="Sentiment_behind_reviews/images/one_hot_table.png" width="500" />
+  <img src="Sentiment_behind_reviews/images/output_vectoriz.png" width="500" />
+</p>
+<p float="left">
+  <img src="Sentiment_behind_reviews/images/TfidfVectorizer_df_file.png" width="500" />
+  <img src="Sentiment_behind_reviews/images/features_word2_vec.png" width="500" />
+</p>
 ### One Hot Encoding
 
 ![text](Sentiment_behind_reviews/images/one_hot_table.png "one_hot_table")
