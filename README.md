@@ -109,6 +109,9 @@ For each features engineering process like tf-idf and countVectorizer, I separat
 
 - f1_score: 0.84 Train & 0.83 Testing
 
+| Attempt | #1 | #2 |
+| :---: | :---: | :---: |
+| Seconds | 301 | 283 |
 
 
 ## snapshots Outputs
