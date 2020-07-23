@@ -21,7 +21,6 @@ Go to "Graduation Report" folder then write interminal:
 
 - pip install -r requirements.txt
 
-
 ### Quick intuition 
 
 **Test Client Review, Retrive Product and predict Senitment of all reviews**
@@ -31,6 +30,15 @@ Go to "Graduation Report" folder then write interminal:
   <img src="Sentiment_behind_reviews/images/product_1.png" width="400" /> 
 </p>
 
+## Model Evaluation
+|Model & Features Engineer | CountVectorizer | TF-IDF | Word2Vec |
+| :---: | :---: | :---: | :---: |
+| Logistic Regression | 89 | 90 | 83 |
+| SVC Linear | 88 | 90 | 83 |
+| MultinomialNB | 86 | 84.1 |  |
+
+
+### The remain of notebook put you on the notebooks structure
 
 **Structure of the Scrapping & cleaning:**
 - connect to cloud mongodb database: some variables defined in souq_configs file.
@@ -38,7 +46,7 @@ Go to "Graduation Report" folder then write interminal:
 - others files like cleaning and features engineering work on these scraped data, actually on  reviews of products
 - testing some of functions
 - remove punctuations of all reviews
-- remove stop words # I found its so bad to remove stop words because its convert the meaning of the sentense at all but I have Designed my own stopwords for this project because of sentment analysis issues
+- remove stop words
 - spell correction
 - Tokenization
 - Lemmatization
@@ -58,13 +66,6 @@ Go to "Graduation Report" folder then write interminal:
 - SVC Linear
 - MultinomialNB naive_bayes
 
-For each features engineering process like tf-idf and countVectorizer, I separate each of them to its own file with models based on the feature I used.
-
-|Model & Features Engineer | CountVectorizer | TF-IDF | Word2Vec |
-| :---: | :---: | :---: | :---: |
-| Logistic Regression | 89 | 90 | 83 |
-| SVC Linear | 88 | 90 | 83 |
-| MultinomialNB | 86 | 84.1 |  |
 
 ## snapshots Outputs
 
