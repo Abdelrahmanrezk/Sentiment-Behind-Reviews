@@ -23,8 +23,11 @@ Go to "Graduation Report" folder then write interminal:
 ### Quick intuition 
 
 ### Test Client Review & Retrive Product and predict Senitment of all reviews
-![text](Sentiment_behind_reviews/images/positive_review1.png "positive_review1") ![text](Sentiment_behind_reviews/images/product_1.png "product_1")
 
+<p float="left">
+  <img src="Sentiment_behind_reviews/images/positive_review1.png" width="400" />
+  <img src="Sentiment_behind_reviews/images/product_1.png" width="400" /> 
+</p>
 
 ### Scraping Data
 
