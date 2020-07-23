@@ -60,56 +60,7 @@ Go to "Graduation Report" folder then write interminal:
 
 For each features engineering process like tf-idf and countVectorizer, I separate each of them to its own file with models based on the feature I used.
 
-
-### Modeling
-
-**MultinomialNB naive_bayes**
-
-- f1_score: 0.93 Train & 0.86 Testing
-
-**LogisticRegression**
-
-- f1_score: 0.91 Train & 0.89 Testing
-
-**SVC Linear**
-
-- f1_score: 0.96Train & 0.88 Testing
-
-
-### Modeling
-
-**MultinomialNB naive_bayes**
-
-- f1_score: 0.840 Train & 0.841 Testing
-
-**LogisticRegression**
-
-- f1_score: 0.89 Train & 0.90 Testing
-
-**SVC Linear**
-
-- f1_score: 0.93 Train & 0.90 Testing
-
-**SVC poly 2**
-
-- f1_score: 0.80 Train & 0.82 Testing
-
-**SVC poly 2**
-
-- f1_score: 0.80 Train & 0.82 Testing Also !!
-
-
-### Modeling
-
-**LogisticRegression**
-
-- f1_score: 0.84 Train & 0.83 Testing
-
-**SVC Linear**
-
-- f1_score: 0.84 Train & 0.83 Testing
-
-|Model | #CountVectorizer | #TF-IDF | #Word2Vec |
+|Model & Features Engineer | CountVectorizer | TF-IDF | Word2Vec |
 | :---: | :---: | :---: | :---: |
 | Logistic Regression | 89 | 90 | 83 |
 | SVC Linear | 88 | 90 | 83 |
