@@ -116,8 +116,7 @@ For each features engineering process like tf-idf and countVectorizer, I separat
 <p float="left">
   <img src="Sentiment_behind_reviews/images/one_hot_table.png" width="300" />
   <img src="Sentiment_behind_reviews/images/output_vectoriz.png" width="300" />
-	<img src="Sentiment_behind_reviews/images/TfidfVectorizer_df_file.png" width="300" />
-  <img src="Sentiment_behind_reviews/images/pca_reduction_word2vec.png" width="300" />
+  <img src="Sentiment_behind_reviews/images/pca_reduction_word2vec.png" width="600" />
 </p>
 
 
